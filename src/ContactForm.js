@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
-import Output from './Output'
+import EmailDetails from './EmailDetails'
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -104,7 +104,7 @@ function ContactForm() {
                 <h1 style={{ color: '#B0B0CA' }}>{'---------------------->'}</h1>
             </div>
             <div>
-                <Output formData={formData} />
+                <EmailDetails />
             </div>
         </div>
 

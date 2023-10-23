@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Output() {
+function EmailDetails() {
     return (
         <div style={{ display: 'block', textAlign: 'start', margin: '80px' }}>
             <div>
@@ -16,4 +16,4 @@ function Output() {
     )
 }
 
-export default Output
+export default EmailDetails
