@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
+import Output from './Output'
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -26,18 +27,9 @@ function ContactForm() {
     };
 
     return (
-        <div style={{
-            display: 'flex',
-            justifyContent: 'start',
-            alignItems: 'center',
-            width: '100%',
-            height: '100%',
-            margin: '0px auto'
-        }}>
-
-
+        <div style={{ display: "flex", justifyContent: 'space-between', width: '100%' }}>
             <div className="contact-form">
-                <form onSubmit={handleSubmit} style={{ display: 'block' }}>
+                <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="firstName">First Name:</label>
                         <input
@@ -107,8 +99,13 @@ function ContactForm() {
                         Submit
                     </button>
                 </form>
+
+            </div>
+            <div>
+                <Output formData={formData} />
             </div>
         </div>
+
     );
 }
 
