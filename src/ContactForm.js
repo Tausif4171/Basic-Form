@@ -101,6 +101,9 @@ function ContactForm() {
                 </form>
 
             </div>
+            <div style={{ display: 'flex', justifyItems: 'center', alignItems: 'center' }}>
+                <h1>{'--------------------------------------->'}</h1>
+            </div>
             <div>
                 <Output formData={formData} />
             </div>
