@@ -27,7 +27,7 @@ function ContactForm() {
     };
 
     return (
-        <div style={{ display: "flex", justifyContent: 'space-between', width: '100%' }}>
+        <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center', height: '100vh' }}>
             <div className="contact-form">
                 <form onSubmit={handleSubmit}>
                     <div>
@@ -99,15 +99,15 @@ function ContactForm() {
                         Submit
                     </button>
                 </form>
-
             </div>
-            <div style={{ display: 'flex', justifyItems: 'center', alignItems: 'center' }}>
-                <h1>{'--------------------------------------->'}</h1>
+            <div>
+                <h1 style={{ color: '#B0B0CA' }}>{'---------------------->'}</h1>
             </div>
             <div>
                 <Output formData={formData} />
             </div>
         </div>
+
 
     );
 }

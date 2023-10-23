@@ -2,7 +2,7 @@ import React from 'react'
 
 function Output() {
     return (
-        <div style={{ display: 'block', textAlign: 'start', margin: '60px' }}>
+        <div style={{ display: 'block', textAlign: 'start', margin: '80px' }}>
             <div>
                 <h1 style={{ fontSize: '18px', color: 'black', fontWeight: 'bold' }}>Email Details</h1>
             </div>
